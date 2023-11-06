@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33000000"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/imgBar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/imgCar"
+            app:layout_constraintEnd_toStartOf="@+id/imgBird"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bar" />
+
+        <ImageView
+            android:id="@+id/imgBird"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/imgCat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgBar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bird" />
+
+        <ImageView
+            android:id="@+id/imgCar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/imgChildren"
+            app:layout_constraintEnd_toStartOf="@+id/imgCat"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBar"
+            app:srcCompat="@drawable/ic_car" />
+
+        <ImageView
+            android:id="@+id/imgCat"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/imgDog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgCar"
+            app:layout_constraintTop_toBottomOf="@+id/imgBird"
+            app:srcCompat="@drawable/ic_cat" />
+
+        <ImageView
+            android:id="@+id/imgChildren"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgDog"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgCar"
+            app:srcCompat="@drawable/ic_children" />
+
+        <ImageView
+            android:id="@+id/imgDog"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgChildren"
+            app:layout_constraintTop_toBottomOf="@+id/imgCat"
+            app:srcCompat="@drawable/ic_dog" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
